@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrir Marvels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: #fff;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about-us {
+            width: 100%;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer input[type="text"], .footer input[type="email"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: calc(50% - 10%);
+        }
+
+        .footer input[type="submit"] {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .footer input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1> Madrid Marvels</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Food Spots</a></li>
+            <li><a href="#">Things to Do</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="image-container">
+            <img src="#" alt="Madrid">
+        </div>
+        <div class="description">
+            <p>Welcome to Madrid, the vibrant capital of Spain.Discover the rich culture, delicious cuisine, and exciting attractions that this beautiful city has to offer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nulla porro ratione temporibus, dolor a blanditiis omnis aliquid perferendis officia aliquam eveniet distinctio fugiat iusto corrupti dignissimos? Nisi, et dignissimos?</p>
+        </div>
+        <div class="slideshow">
+            <!--Pictures of the slideshow go here-->
+        </div>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, minima ut? Dicta magni necessitatibus autem ipsam aliquid id consectetur et, beatae repellendus dolorum ea deserunt, iste dolor? Modi, inventore maiores.</p>
+        </div>
+        <div class="footer">
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Surname">
+                <input type="email" placeholder="Email">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+        <div class="contact-info">
+            <p>Address: Madrid, Spain</p>
+            <p>Email: info@madridmarvels.com</p>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
