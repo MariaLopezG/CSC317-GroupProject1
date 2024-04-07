@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madrir Marvels</title>
+    <title>Madrid Marvels</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0;
             font-family: 'Roboto', sans-serif;
+            color:#9F8C76;
         }
 
         .navbar {
-            background-color: #333;
+            background-color: #f1e9d2;
             position: sticky;
             top: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            color: #701863;
+            color:#9F8C76;
         }
 
         .navbar h1 {
@@ -63,6 +65,20 @@
             margin: auto;
         }
 
+        /* Styling the area of the slides */
+        #slideshow{
+            overflow: hidden;
+            height: 500px;
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Style each of the sides with a fixed width and height */
+        .slide {
+            float: left;
+            height: 500px;
+            width: 700px;
+        }
         /* Next & previous buttons */
         .prev, .next {
             cursor: pointer;
@@ -108,8 +124,8 @@
             padding: 20px;
         }
 
-        .footer form {
-            display:flex
+        .footer-form {
+            display:flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
@@ -119,7 +135,7 @@
             padding: 10px; 
             margin-bottom: 10px;
             width: 40%;
-            }
+        }
 
         button{
             font-size: 16px;
@@ -168,12 +184,7 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-
-
-
-
-
-
+        
 
 
 
@@ -198,6 +209,13 @@
                 }
               </script>
 
+
+
+
+
+
+
+
         </div>
         <div class="about-us">
             <h2>About Us</h2>
@@ -211,7 +229,7 @@
                 <input type="text" placeholder="Surname">
                 <input type="email" placeholder="Email">
 
-                <button>Suscribe</button>
+                <button>Subscribe</button>
             </form>
         </div>
         <div class="contact-info">
