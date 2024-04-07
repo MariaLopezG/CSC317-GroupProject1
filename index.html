@@ -47,6 +47,55 @@
             flex-wrap: wrap;
         }
 
+
+        /* Hide all images by default */
+        .slideshow-img {
+            display: none;
+        } 
+        /* Show the first image */
+        .slideshow-img:first-child{
+            display: block;
+        }
+        /* Style for the slideshow container */
+        .slideshow-container {
+            position:relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: beige;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "prev button" to the right */
+        .prev {
+            left: 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: #9F8C76;
+        }
+
+       
+
         .about-us {
             width: 100%;
             padding: 20px;
@@ -54,35 +103,41 @@
         }
 
         .footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #967859;
+            color: black;
             padding: 20px;
         }
 
         .footer form {
-            display: flex;
+            display:flex
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
         }
 
         .footer input[type="text"], .footer input[type="email"] {
-            padding: 8px;
+            padding: 10px; 
             margin-bottom: 10px;
-            width: calc(50% - 10%);
-        }
+            width: 40%;
+            }
 
-        .footer input[type="submit"] {
-            padding: 8px 20px;
-            background-color: #4CAF50;
-            border: none;
+        button{
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 10px;
+            background: #D2B48C;
             color: white;
-            cursor: pointer;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        button:hover{
+            color: white;
+            background-color: #C8AD7F;
+            transform: translateY(-1px);
+
         }
 
-        .footer input[type="submit"]:hover {
-            background-color: #45a049;
-        }
 
     </style>
 </head>
@@ -102,18 +157,63 @@
         <div class="description">
             <p>Welcome to Madrid, the vibrant capital of Spain.Discover the rich culture, delicious cuisine, and exciting attractions that this beautiful city has to offer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nulla porro ratione temporibus, dolor a blanditiis omnis aliquid perferendis officia aliquam eveniet distinctio fugiat iusto corrupti dignissimos? Nisi, et dignissimos?</p>
         </div>
-        <div class="slideshow">
+        <div class="slideshow-container">
             <!--Pictures of the slideshow go here-->
+           
+            <img class="slideshow-img" src="/Users/meryloga/Downloads/Plaza_Mayor_de_Madrid_06.jpg" alt="Plaza Mayor de Madrid" style="width: 60%">
+            <img class="slideshow-img" src="/Users/meryloga/Downloads/Las-Meninas-at-Museo-del-Prado.jpg" alt="Las Meninas at Musel del Prado" style="width: 60%">
+            <img class="slideshow-img" src="/Users/meryloga/Downloads/27166427597_71fd071644_b.jpg" alt="Chulapos bailando el Chotis" style="width: 60%">
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                // JavaScript for the slideshow
+                var slideIndex = 1;
+                showSlides(slideIndex);
+              
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+              
+                function showSlides(n) {
+                  var slides = document.getElementsByClassName("slideshow-img");
+                  if (n > slides.length) { slideIndex = 1; }
+                  if (n < 1) { slideIndex = slides.length; }
+                  for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                }
+              </script>
+
         </div>
         <div class="about-us">
             <h2>About Us</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, minima ut? Dicta magni necessitatibus autem ipsam aliquid id consectetur et, beatae repellendus dolorum ea deserunt, iste dolor? Modi, inventore maiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, minima ut? Dicta magni necessitatibus autem ipsam al
+                
+                iquid id consectetur et, beatae repellendus dolorum ea deserunt, iste dolor? Modi, inventore maiores.</p>
         </div>
         <div class="footer">
             <form>
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Surname">
                 <input type="email" placeholder="Email">
+
+                <button>Suscribir</button>
+
+
                 <input type="submit" value="Subscribe">
             </form>
         </div>
