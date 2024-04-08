@@ -84,23 +84,126 @@
 
         .description p {
             margin-top: 50px;
-        }
-
-       
-
-
-       
+        }       
 
 
         /* Styling the slideshow starts here*/
 
+        /* Maria's slide show
+
+
+        .slideshow-img {
+            display: none;
+        } 
+        
+        .slideshow-img:first-child{
+            display: block;
+        }
+
+        
+        .slideshow-container {
+            position:relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        #slideshow{
+            overflow: hidden;
+            height: 500px;
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        .slide {
+            float: left;
+            height: 500px;
+            width: 700px;
+        }
+
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: beige;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+
+        .prev:hover, .next:hover {
+        background-color: #9F8C76;
+        }
+
+
+*/
+
+       .footer {
+            width: 47%;
+            background-color: #f1e9d2;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer-form {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer input[type="text"], .footer input[type="email"] {
+            padding: 10px; 
+            margin-bottom: 10px;
+            width: 40%;
+        }
+
+
+        
+        button{
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 10px;
+            background: #D2B48C;
+            color: white;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        button:hover{
+            color: white;
+            background-color: #C8AD7F;
+            transform: translateY(-1px);
+
+        }
+        
+
+
+        /* Slide show ADEA */
+
         #slideshow {
-        overflow: hidden;
-        height: 510px;
-        width: 728px;
-        /* margin: 0 auto; */
-        margin-top: 60px;
-        margin-left: 250px;
+            overflow: hidden;
+            height: 510px;
+            width: 728px;
+            /* margin: 0 auto; */
+            margin-top: 60px;
+            margin-left: 250px;
         }
      
         /* with a fixed width and height */
@@ -143,8 +246,8 @@
         }
         
         .slide:nth-child(4) {
-            background: yellow;
-        }
+            background-image: url(images/Bocadillo-de-calamares.jpeg);
+            background-size: contain;        }
         
         /* Define the animation 
         for the slideshow */
@@ -181,6 +284,17 @@
             /* color: #333; */
         }
 
+        #blogger1 {
+            margin-top: 55px;
+        }
+
+        #blogger2 {
+            width: auto;
+            height: 400px;
+            margin-top: 170px;
+            margin-left: 70px;
+        }
+        
         .blogger-container {
             display: flex;
             justify-content: space-between;
@@ -231,6 +345,12 @@
             margin: 0;
             font-size: 14px;
         }
+
+        .contact-info {
+            width: 50%;
+            background-color: #f1e9d2;
+        }
+
 
         /* End of about-us section */
 
@@ -346,7 +466,7 @@
                 </div>
                 <div class="slide">
                     <h1 class="slide-number">
-                        Las Meninas at Musel del Prado
+                        Las Meninas at Museo del Prado
                     </h1>
                 </div>
                 <div class="slide">
@@ -356,7 +476,7 @@
                 </div>
                 <div class="slide">
                     <h1 class="slide-number">
-                        Slideshow with HTML and CSS only
+                        Bocadillo de calamares, aceitunas y cerveza
                     </h1>
                 </div>
             </div>
@@ -367,7 +487,7 @@
             <h1>About Us</h1>
             <div class="blogger-container">
                 <div class="blogger">
-                    <img src="images/about-us-adea.png" alt="Blogger 1">
+                    <img src="images/about-us-adea.png" alt="Blogger 1" id="blogger1">
                     <div class="blogger-description">
                         <p class="blogger-name">Adea</p>
                         <p>International student from Kosovo, interested in Cyber Security. 
@@ -375,7 +495,7 @@
                     </div>
                 </div>
                 <div class="blogger">
-                    <img src="images/about-us-maria.png" alt="Blogger 2">
+                    <img src="images/about-us-maria.png" alt="Blogger 2" id="blogger2">
                     <div class="blogger-description">
                         <p class="blogger-name">Maria</p>
                         <p>Phasellus auctor sapien a dolor efficitur, sit amet faucibus magna sodales. Integer in elit eu urna bibendum sollicitudin.</p>
@@ -390,7 +510,6 @@
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Surname">
                 <input type="email" placeholder="Email">
-
                 <button>Subscribe</button>
             </form>
         </div>
