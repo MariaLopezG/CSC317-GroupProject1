@@ -16,6 +16,8 @@
             background-color: #faf6e7;
         }
 
+        /* Styling navbar */
+
         .navbar {
             background-color: rgba(0, 0, 0, 0.9);;
             position: sticky;
@@ -24,10 +26,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            color:#9F8C76;
+            color:#D2B48C;
         }
-
-    
 
         .navbar h1 {
             margin-top: 12px;
@@ -47,9 +47,23 @@
             
         }
 
+        .navbar a {
+            color: #9F8C76;
+            text-decoration:none;
+            border: 10px  #faf6e7;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            color: white;
+            
+        }
+
         .navbar li:last-child {
             margin-right: 0;
         }
+
+        /* End of navbar */
 
         .main-content {
             display: flex;
@@ -74,116 +88,11 @@
 
        
 
-/* Maira's slide show
-
-
-        .slideshow-img {
-            display: none;
-        } 
-        
-        .slideshow-img:first-child{
-            display: block;
-        }
-
-        
-        .slideshow-container {
-            position:relative;
-            max-width: 100%;
-            margin: auto;
-        }
-
-        #slideshow{
-            overflow: hidden;
-            height: 500px;
-            width: 700px;
-            margin: 0 auto;
-        }
-
-        .slide {
-            float: left;
-            height: 500px;
-            width: 700px;
-        }
-
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: beige;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-
-        .prev {
-            left: 0;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-
-        .prev:hover, .next:hover {
-        background-color: #9F8C76;
-        }
-
-
-*/
-        
-
-
 
        
 
-        
 
-       .footer {
-            background-color: #f1e9d2;
-            color: #fff;
-            padding: 20px;
-        }
-
-        .footer-form {
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .footer input[type="text"], .footer input[type="email"] {
-            padding: 10px; 
-            margin-bottom: 10px;
-            width: 40%;
-        }
-
-        button{
-            font-size: 16px;
-            padding: 10px 20px;
-            border-radius: 10px;
-            border: 10px;
-            background: #D2B48C;
-            color: white;
-            font-weight: bold;
-            cursor:pointer;
-        }
-        button:hover{
-            color: white;
-            background-color: #C8AD7F;
-            transform: translateY(-1px);
-
-        }
-
-
-        /* Slide show ADEA */
+        /* Styling the slideshow starts here*/
 
         #slideshow {
         overflow: hidden;
@@ -194,8 +103,7 @@
         margin-left: 250px;
         }
      
-        /* Style each of the sides 
-        with a fixed width and height */
+        /* with a fixed width and height */
         
         .slide {
             float: left;
@@ -325,6 +233,47 @@
         }
 
         /* End of about-us section */
+
+        /* Start of the footer */
+
+        .footer {
+            background-color: #f1e9d2;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer-form {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer input[type="text"], .footer input[type="email"] {
+            padding: 10px; 
+            margin-bottom: 10px;
+            width: 40%;
+        }
+
+        button{
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 10px;
+            background: #D2B48C;
+            color: white;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        button:hover{
+            color: white;
+            background-color: #C8AD7F;
+            transform: translateY(-1px);
+
+        }
+
+        /* End of footer */
+
 
     </style>
 </head>
