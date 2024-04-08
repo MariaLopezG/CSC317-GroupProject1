@@ -144,11 +144,7 @@
 
        
 
-        .about-us {
-            width: 100%;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
+        
 
        .footer {
             background-color: #f1e9d2;
@@ -263,7 +259,72 @@
             }
         }
 
-        
+
+    /* Styling about-us section */
+
+        .about-us {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about-us h1 {
+            text-align: center;
+            /* color: #333; */
+        }
+
+        .blogger-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .blogger {
+            flex: 0 0 48%; /* Each blogger takes up 48% of the container */
+            position: relative;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blogger:hover {
+            transform: scale(1.05);
+        }
+
+        .blogger img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blogger .blogger-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blogger:hover .blogger-description {
+            transform: translateY(0);
+        }
+
+        .blogger .blogger-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .blogger .blogger-description p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* End of about-us section */
 
     </style>
 </head>
@@ -354,11 +415,27 @@
 
 
         <div class="about-us">
-            <h2>About Us</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, minima ut? Dicta magni necessitatibus autem ipsam al
-                
-                iquid id consectetur et, beatae repellendus dolorum ea deserunt, iste dolor? Modi, inventore maiores.</p>
+            <h1>About Us</h1>
+            <div class="blogger-container">
+                <div class="blogger">
+                    <img src="images/about-us-adea.png" alt="Blogger 1">
+                    <div class="blogger-description">
+                        <p class="blogger-name">Adea</p>
+                        <p>International student from Kosovo, interested in Cyber Security. 
+                            Very cool and funny after you get to know me hihi!!</p>
+                    </div>
+                </div>
+                <div class="blogger">
+                    <img src="images/about-us-maria.png" alt="Blogger 2">
+                    <div class="blogger-description">
+                        <p class="blogger-name">Maria</p>
+                        <p>Phasellus auctor sapien a dolor efficitur, sit amet faucibus magna sodales. Integer in elit eu urna bibendum sollicitudin.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
         <div class="footer">
             <form>
                 <input type="text" placeholder="Name">
