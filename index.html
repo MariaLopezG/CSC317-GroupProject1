@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madrid Marvels</title>
-    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/logo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -91,109 +91,6 @@
 
         /* Styling the slideshow starts here*/
 
-        /* Maria's slide show
-
-
-        .slideshow-img {
-            display: none;
-        } 
-        
-        .slideshow-img:first-child{
-            display: block;
-        }
-
-        
-        .slideshow-container {
-            position:relative;
-            max-width: 100%;
-            margin: auto;
-        }
-
-        #slideshow{
-            overflow: hidden;
-            height: 500px;
-            width: 700px;
-            margin: 0 auto;
-        }
-
-        .slide {
-            float: left;
-            height: 500px;
-            width: 700px;
-        }
-
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: beige;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-
-        .prev {
-            left: 0;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-
-        .prev:hover, .next:hover {
-        background-color: #9F8C76;
-        }
-
-       .footer {
-            width: 45%;
-            background-color: #f1e9d2;
-            color: #fff;
-            padding: 20px;
-        }
-
-        .footer-form {
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .footer input[type="text"], .footer input[type="email"] {
-            padding: 10px; 
-            margin-bottom: 10px;
-            width: 40%;
-        }
-        
-        button{
-            font-size: 16px;
-            padding: 10px 20px;
-            border-radius: 10px;
-            border: 10px;
-            background: #D2B48C;
-            color: white;
-            font-weight: bold;
-            cursor:pointer;
-        }
-        button:hover{
-            color: white;
-            background-color: #C8AD7F;
-            transform: translateY(-1px);
-
-        }
-        
-
-
-        /* Slide show ADEA */
-
         #slideshow {
             overflow: hidden;
             height: 510px;
@@ -274,6 +171,7 @@
             }
         }
 
+    /* End of slideshow */
 
     /* Styling about-us section */
 
@@ -360,7 +258,7 @@
 
         /* Start of the footer */
 
-        .footer {
+        /* .footer {
             background-color: #f1e9d2;
             color: #fff;
             padding: 20px;
@@ -406,10 +304,120 @@
             width: 60px;
             text-decoration: none;
             margin: 5px 80px;
-        }
+        } */
  
 
         /* End of footer */
+
+
+        /* Footer contact form */
+
+        .footer form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer input[type="text"],
+        .footer input[type="email"],
+        .footer button {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: calc(100% - 22px); /* Adjusted width to accommodate padding and margin */
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer input[type="text"],
+        .footer input[type="email"] {
+            background-color: #f9f5e9; /* Light yellow background */
+        }
+
+        .footer input[type="text"]:focus,
+        .footer input[type="email"]:focus,
+        .footer button:focus {
+            outline: none;
+            box-shadow: 0 0 5px #D2B48C; /* Added focus styling */
+        }
+
+        .footer button {
+            background-color: #D2B48C;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .footer button:hover {
+            background-color: #C8AD7F;
+        }
+
+
+
+        /* Footer socials */
+        .footer {
+            background-color: #f1e9d2;
+            color:#fff;
+            padding: 20px;
+            display: flex; /* Display footer content in a row */
+            justify-content: space-between; /* Space out the content */
+            width: 100%;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .left {
+            width: 45%;
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .contact-info {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .social-icons li {
+            margin-right: 10px;
+        }
+
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+
+        .fa {
+            font-size: 20px;
+            color: #3b5998;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+
+
 
 
     </style>
@@ -434,41 +442,6 @@
                 This blog is your ultimate guide to exploring Madrid like a local. Whether you're interested in discovering hidden food spots serving authentic Spanish delicacies or seeking out the best activities and events happening in the city, we've got you covered. Join us on a journey through the enchanting streets of Madrid as we unveil its marvels and share insider tips to make your visit truly unforgettable.</p>
     
         </div>
-        <!-- <div class="slideshow-container">
-           
-            <img class="slideshow-img" src="images/Plaza_Mayor_de_Madrid_06.jpg" alt="Plaza Mayor de Madrid" style="width: 60%">
-            <img class="slideshow-img" src="images/Las-Meninas-at-Museo-del-Prado.jpg" alt="Las Meninas at Musel del Prado" style="width: 60%">
-            <img class="slideshow-img" src="images/27166427597_71fd071644_b.jpg" alt="Chulapos bailando el Chotis" style="width: 60%">
-
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        
-
-
-
-
-            <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
-              
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-              
-                function showSlides(n) {
-                  var slides = document.getElementsByClassName("slideshow-img");
-                  if (n > slides.length) { slideIndex = 1; }
-                  if (n < 1) { slideIndex = slides.length; }
-                  for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                  }
-                  slides[slideIndex - 1].style.display = "block";
-                }
-            </script>
-
-        </div> -->
 
         <div id="slideshow">
             <div class="slide-wrapper">
@@ -523,21 +496,23 @@
 
 
         <div class="footer">
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Surname">
-                <input type="email" placeholder="Email">
-                <button>Subscribe</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <p>Address: Madrid, Spain</p>
-            <p>Email: info@madridmarvels.com</p>
-            <p>Follow us on social media:</p>
-            <ul>
-                <li><a href="#" class="fa-brands fa-facebook"></a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
+            <div class="left">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Surname">
+                    <input type="email" placeholder="Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+            <div class="right contact-info">
+                <p><i class="fa fa-map-marker"></i> Madrid, Spain</p>
+                <p><i class="fa fa-envelope"></i> info@madridmarvels.com</p>
+                <ul class="social-icons">
+                    <li><i class="fa fa-facebook"></i> Madrid Marvels</li>
+                    <li><i class="fa fa-instagram"></i> @madridmarvels</li>
+                </ul>
+            </div>
+            
         </div>
     </div>
 
