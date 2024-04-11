@@ -13,5 +13,6 @@ This one page website contains:
 
 ### Resources
 Including social media icons: https://www.geeksforgeeks.org/how-to-include-social-media-icons-in-html/
+
 About-us section above navbar: https://forum.freecodecamp.org/t/why-is-my-navbar-behind-other-content/62059/2
 
